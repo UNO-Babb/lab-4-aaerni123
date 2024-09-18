@@ -11,15 +11,18 @@ def drawSquare(myTurtle, size):
         myTurtle.forward(size)
         myTurtle.right(90)
 
-def squareInSquare(myTurtle, num):
+def squaresInSquares(myTurtle, num):
     size = 10
     for i in range(num):
         drawSquare(myTurtle, size)
+        myTurtle.up()
         size = size + 20
         myTurtle.right(180)
         myTurtle.forward(10)
-        
-
+        myTurtle.right(90)
+        myTurtle.forward(10)
+        myTurtle.right(90)
+        myTurtle.down()
 def main():
     myTurtle = turtle.Turtle()
     # drawPolygon(myTurtle, 5) #draws a pentagon
